@@ -205,6 +205,7 @@ var badWords = [
     "chinamen",
     "chinese",
     "chink",
+    "chinks",
     "chinky",
     "choad",
     "chode",
@@ -1401,9 +1402,15 @@ function replaceText (node) {
   let value = node.nodeValue;
   for(var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
-    var wordreg = RegExp('\\b'+word+'\\b', 'i')
+    var wordreg = RegExp('\\b'+word+'\\b', 'gi')
+    insertion = '<span style="background-color:#E0E0E0;"> hi </span>';
+    var oldval = value;
     value = value.replace(wordreg, "■".repeat(word.length));
-}
+    // value = value.replace(wordreg, insertion);    
+    }
+  if (value !== oldval){
+    // do something with knowledge of old values 
+  }
 
 //  value = value.replace(/Cryptocurrency/gi, 'cRyPtOcUrReNcY');
   node.nodeValue = value;
