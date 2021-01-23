@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Machine Unlearning",
+    "version": "0.0.4",
+    "description": "Makes any mention of overused tech buzzwords appear sarcastic to remind you to take them with a pinch of salt",
+    "icons": { "16": "images/img_16.png",
+             "48": "images/img_48.png",
+            "128": "images/img_128.png" },
+    "content_scripts": [
+      {
+      "matches": ["https://*/*"],
+      "permissions": ["activeTab"],
+      "js": ["content.js"],
+      "run_at":"document_end"
+  
+    }
+  ]
+  
+  }
