@@ -1402,8 +1402,9 @@ function findAndReplace(){
 function replaceText (node) {
   let value = node.nodeValue;
   for(var i = 0; i < badWords.length; i++) {
-    if (value = json[i]){
-        value = "■".repeat(value.length);
+    word = badWords[i]
+    if (value.includes(word)){
+        value = value.replace(word, "■".repeat(word.length));
     }
 }
   
