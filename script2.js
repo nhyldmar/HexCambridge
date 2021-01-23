@@ -1406,7 +1406,7 @@ function replaceText (node) {
         value = value.replace(word, "■".repeat(word.length));
     }
 }
-  
+
 //  value = value.replace(/Cryptocurrency/gi, 'cRyPtOcUrReNcY');
   node.nodeValue = value;
 }
