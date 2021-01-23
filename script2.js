@@ -1384,7 +1384,8 @@ var badWords = [
     "zigabo",
     "zipperhead"
     ]
-//var badWords = badWords.json;
+    
+  //var badWords = badWords.json;
 
 function findAndReplace(){
   elementsInsideBody.forEach(element =>{
