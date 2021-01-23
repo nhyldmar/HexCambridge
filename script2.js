@@ -1403,11 +1403,11 @@ function replaceText (node) {
   let value = node.nodeValue;
   for(var i = 0; i < badWords.length; i++) {
     if (value = json[i]){
-        value = "****";
+        value = "■".repeat(value.length);
     }
 }
   
-  value = value.replace(/Cryptocurrency/gi, 'cRyPtOcUrReNcY');
+//  value = value.replace(/Cryptocurrency/gi, 'cRyPtOcUrReNcY');
   node.nodeValue = value;
 }
 
