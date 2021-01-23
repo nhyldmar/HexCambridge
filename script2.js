@@ -1404,8 +1404,13 @@ function replaceText(node) {
     var word = badWords[i];
     var wordreg = RegExp('(\\w*'+word+'e*s*'+'\\w*)', 'gi')
     var oldval = value;
+    match = wordreg.exec(value)
+    while (match !== null){
+        value = value.replace(match[0], "■".repeat(match[0].length));
+        match = wordreg.exec(value)
+    }
 //    value = value.replace(wordreg, "■".repeat(wordreg.length));       // actually just removes each word, rather than typical censoring
-    value = value.replace(wordreg, "■".repeat(word.length));
+    //value = value.replace(wordreg, "■".repeat(word.length));
     // value = value.replace(wordreg, insertion);    
   }
   if (value !== oldval) {
