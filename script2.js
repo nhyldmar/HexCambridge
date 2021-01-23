@@ -1402,8 +1402,9 @@ function replaceText (node) {
   let value = node.nodeValue;
   for(var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
-    var wordreg = RegExp('\\b'+word+'\\b', 'gi')
+    var wordreg = RegExp('(\\w*'+word+'e*s*'+'\\w*)', 'gi')
     var oldval = value;
+//    value = value.replace(wordreg, "■".repeat(wordreg.length));       // actually just removes each word, rather than typical censoring
     value = value.replace(wordreg, "■".repeat(word.length));
     // value = value.replace(wordreg, insertion);    
     }
