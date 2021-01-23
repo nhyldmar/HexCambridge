@@ -1,5 +1,5 @@
 var elementsInsideBody = [...document.body.getElementsByTagName('*')];
-var badwords = {
+var badWords = {
     "words":[
     "abbo",
     "abo",
