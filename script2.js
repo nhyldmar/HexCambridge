@@ -1403,7 +1403,6 @@ function replaceText (node) {
   for(var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
     var wordreg = RegExp('\\b'+word+'\\b', 'gi')
-    insertion = '<span style="background-color:#E0E0E0;"> hi </span>';
     var oldval = value;
     value = value.replace(wordreg, "■".repeat(word.length));
     // value = value.replace(wordreg, insertion);    
