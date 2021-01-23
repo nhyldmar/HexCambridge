@@ -1,6 +1,5 @@
 var elementsInsideBody = [...document.body.getElementsByTagName('*')];
-var badWords = {
-    "words":[
+var badWords = [
     "abbo",
     "abo",
     "abortion",
@@ -1385,7 +1384,6 @@ var badWords = {
     "zigabo",
     "zipperhead"
     ]
-    }
 //var badWords = badWords.json;
 
 function findAndReplace(){
