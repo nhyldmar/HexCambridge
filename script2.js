@@ -1402,9 +1402,7 @@ function replaceText (node) {
   for(var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
     var wordreg = RegExp('\\b'+word+'\\b', 'i')
-    
     value = value.replace(wordreg, "■".repeat(word.length));
-    
 }
 
 //  value = value.replace(/Cryptocurrency/gi, 'cRyPtOcUrReNcY');
