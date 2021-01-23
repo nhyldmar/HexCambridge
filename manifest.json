@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
   
-    "name": "Machine Unlearning",
-    "version": "0.0.4",
-    "description": "Makes any mention of overused tech buzzwords appear sarcastic to remind you to take them with a pinch of salt",
+    "name": "Life betterinator",
+    "version": "0.0.1",
+    "description": "Censors hatespeech because that shit sucks yo :(",
     "icons": { "16": "images/img_16.png",
              "48": "images/img_48.png",
             "128": "images/img_128.png" },
