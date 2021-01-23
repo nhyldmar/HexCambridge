@@ -1385,7 +1385,7 @@ var badWords = {
     "zigabo",
     "zipperhead"
     ]
-    }
+    };
 //var badWords = badWords.json;
 
 function findAndReplace(){
