@@ -11,7 +11,7 @@
       {
       "matches": ["https://*/*"],
       "permissions": ["activeTab"],
-      "js": ["content.js"],
+      "js": ["script2.js"],
       "run_at":"document_end"
   
     }
