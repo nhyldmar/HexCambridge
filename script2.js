@@ -1402,7 +1402,7 @@ function replaceText (node) {
   let value = node.nodeValue;
   for(var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
-    var wordreg = RegExp('\\b'+word+'\\b')
+    var wordreg = RegExp('\\b'+word+'\\b', 'i')
     if (value.includes(word)){
         value = value.replace(wordreg, "■".repeat(word.length));
     }
