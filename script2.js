@@ -6,7 +6,7 @@ var badWords = [
   "abuse",
   "addict",
   "addicts",
-  "adult",
+//  "adult",
   "africa",
   "african",
   "alla",
