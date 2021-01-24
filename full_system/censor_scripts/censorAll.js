@@ -1318,7 +1318,7 @@ var badWords = [
   "twink",
   "twinkie",
   "twobitwhore",
-  "uck",
+//  "uck",
 //  "uk",
   "unfuckable",
   "upskirt",
@@ -1395,11 +1395,27 @@ function findAndReplace() {
   elementsInsideBody.forEach(element => {
     element.childNodes.forEach(child => {
       if (child.nodeType === 3) {
-        replaceText(child);
+        replaceText1(child);
       }
     });
   });
 }
+
+function replaceText1(node) {
+    let value = node.nodeValue;
+  
+    for (var i = 0; i < badWords.length; i++) {
+      var word = badWords[i];
+      var wordreg = RegExp('((?<!>)\\w*'+word+'e*r*s*(?!\\w+))', 'gi')
+      var oldval = value;
+      match = wordreg.exec(value)
+      while (match !== null){
+          value = value.replace(match[0], "<span style = \"color:#ff1493;\">"+match[0]+"</span>")//"<div id=\"spoiler_text\" style=\"display: none;\">" + match[0] + "</div>");
+          match = wordreg.exec(value)
+      }
+    }
+    node.nodeValue = value;
+  }
 
 function replaceText(node) {
   let value = node.nodeValue;
