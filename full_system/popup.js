@@ -1,5 +1,7 @@
 // var app = chrome.runtime.getBackgroundPage();
 
+var oldBody = null;
+
 function fuck1() {
   chrome.tabs.executeScript({
     file: 'censor_scripts/fuck.js'
