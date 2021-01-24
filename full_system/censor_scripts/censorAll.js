@@ -1395,13 +1395,13 @@ function findAndReplace() {
   elementsInsideBody.forEach(element => {
     element.childNodes.forEach(child => {
       if (child.nodeType === 3) {
-        replaceText1(child);
+        replaceText(child);
       }
     });
   });
 }
 
-function replaceText1(node) {
+function censorText(node) {
     let value = node.nodeValue;
   
     for (var i = 0; i < badWords.length; i++) {
