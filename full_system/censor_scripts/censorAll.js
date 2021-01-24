@@ -771,7 +771,7 @@ var badWords = [
   "lugan",
   "lynch",
   "macaca",
-  "mad",
+//  "mad",
   "mafia",
   "magicwand",
   "mams",
