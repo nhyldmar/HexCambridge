@@ -2,16 +2,16 @@
 
 var oldBody = null;
 
-function fuck1() {
+function race1() {
   chrome.tabs.executeScript({
-    file: 'censor_scripts/fuck.js'
+    file: 'censor_scripts/race.js'
   }); 
 }
 
 
-function shit1() {
+function homo1() {
   chrome.tabs.executeScript({
-    file: 'censor_scripts/shit.js'
+    file: 'censor_scripts/homo.js'
   }); 
 }
 
@@ -22,28 +22,28 @@ function censorAll1() {
 }
 
 // uncensor scripts
-function fuck2() {
+function race2() {
   chrome.tabs.executeScript({
-    file: 'censor_scripts/fuck.js'
+    file: 'censor_scripts/unCensorAll.js'
   }); 
 }
 
 
-function shit2() {
+function homo2() {
   chrome.tabs.executeScript({
-    file: 'censor_scripts/shit.js'
+    file: 'censor_scripts/unCensorAll.js'
   }); 
 }
 
 function censorAll2() {
   chrome.tabs.executeScript({
-    file: 'censor_scripts/censorAll.js'
+    file: 'censor_scripts/unCensorAll.js'
   }); 
 }
 
-document.getElementById('fuck1').addEventListener('click', fuck1);
-document.getElementById('fuck2').addEventListener('click', fuck2);
-document.getElementById('shit1').addEventListener('click', shit1);
-document.getElementById('shit2').addEventListener('click', shit2);
+document.getElementById('race1').addEventListener('click', race1);
+document.getElementById('race2').addEventListener('click', censorAll2);
+document.getElementById('homo1').addEventListener('click', homo1);
+document.getElementById('homo2').addEventListener('click', censorAll2);
 document.getElementById('censorAll1').addEventListener('click', censorAll1);
 document.getElementById('censorAll2').addEventListener('click', censorAll2);
