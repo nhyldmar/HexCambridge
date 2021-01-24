@@ -1400,9 +1400,22 @@ function findAndReplace() {
 
 function replaceText(node) {
   let value = node.nodeValue;
+  //var newVal = null;
+  //for(var k = 0; k < value.length; k++){
+  //    newVal = newVal + value[k]
+  //    if (k !== 0){
+  //        if( k === value.length){
+  //          value = newVal
+  //          console.log("we out here")
+  //        }
+  //    }
+  //}
+  
+  //var split = value.split(" ");
+  //var value = split.join(" ");
   for (var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
-    var wordreg = RegExp('(\\w*'+word+'e*s*'+'\\w*)', 'gi')
+    var wordreg = RegExp('(\\w*'+word+'e*r*s*\\w*)', 'gi')
     var oldval = value;
     match = wordreg.exec(value)
     while (match !== null){
