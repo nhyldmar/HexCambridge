@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Life betterinatorinator",
+    "author": "Heinz 'baked beans' Doofenshmirtz",
+    "description": "Click a button to censor the hatespeech, because that shit sucks yo :(",
+    "version": "0.1.0",
+  
+    "icons": {
+      "48": "icon.png"
+    },
+  
+    "permissions": [
+      "tabs", "<all_urls>"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    }
+  }
+  
