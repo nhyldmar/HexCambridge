@@ -1422,7 +1422,7 @@ function replaceText(node) {
 
   for (var i = 0; i < badWords.length; i++) {
     var word = badWords[i];
-    var wordreg = RegExp('(\\w*'+word+'e*r*s*(?!\\w+))', 'gi')
+    var wordreg = RegExp('(\\w*'+word+'i*e*r*s*(?!\\w+))', 'gi')
     var oldval = value;
     match = wordreg.exec(value)
     while (match !== null){
